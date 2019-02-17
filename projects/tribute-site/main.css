@@ -1,0 +1,84 @@
+.content 
+{
+  background-color: #C0C0C0;
+}
+
+#showcase {
+  background-image: url("http://i.huffpost.com/gen/1167150/images/o-CARL-SAGAN-MARIJUANA-facebook.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.test {
+  /* background-image:  */
+}
+
+
+body {
+  background-color: #808080;
+}
+
+h1 {
+  font-size: 90px;
+}
+
+
+header {
+  padding-top: 300px;
+  color: rgb(180, 172, 172);
+  text-shadow: 1px 3px 5px rgba(255, 255, 255, 0.5);
+}
+
+p {
+  font-family: Georgia, Serif;
+}
+
+li {
+  font-family: Georgia, Serif;
+  font-size: 16px;
+}
+
+.intro-text {
+  font-size: 16px;
+}
+
+
+
+footer {
+  height: 50px;
+  background-color: #000;
+  padding-top: 10px;
+}
+
+footer h3 {
+  border-left: 2px solid white;
+  padding-left: 8px;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer ul li {
+  display: inline;
+  
+}
+
+footer ul li:not(:first-child):before {
+  content: "|";
+  padding: 0 10px;
+  color: white;
+}
+
+footer a {
+  color: #a2a2a2;
+  text-transform: uppercase;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: #efefef;
+}
