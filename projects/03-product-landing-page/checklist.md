@@ -1,7 +1,9 @@
-# Objective: Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/RKRbwL.
+# Objective: Build a CodePen.io app that is functionally similar to [this example](https://codepen.io/freeCodeCamp/full/RKRbwL)
 
 Fulfill the below user stories and get all of the tests to pass. Give it your own personal style.
 You can use HTML, JavaScript, and CSS to complete this project. Plain CSS is recommended because that is what the lessons have covered so far and you should get some practice with plain CSS. You can use Bootstrap or SASS if you choose. Additional technologies (just for example jQuery, React, Angular, or Vue) are not recommended for this project, and using them is at your own risk. Other projects will give you a chance to work with different technology stacks like React. We will accept and try to fix all issue reports that use the suggested technology stack for this project. Happy coding!
+
+## Todo:
 
 * User Story #1:
   * My product landing page should have a header element with a corresponding __id="header"__.
@@ -34,6 +36,10 @@ You can use HTML, JavaScript, and CSS to complete this project. Plain CSS is rec
 * User Story #15:
   * My product landing page should utilize CSS flexbox at least once.
 
-You can build your project by forking this CodePen pen. Or you can use this CDN link to run the tests in any environment you like: https://* cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js
+## Done
+
+## Extra Info
+
+You can build your project by forking this CodePen pen. Or you can use this CDN link to run the tests in any environment you like: __https: / / cdn . freecodecamp . org/ testable-projects-fcc/ v1/ bundle. js__
 Once you're done, submit the URL to your working project with all its tests passing.
 Remember to use the Read-Search-Ask method if you get stuck.
