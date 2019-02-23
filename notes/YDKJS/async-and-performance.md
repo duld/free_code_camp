@@ -1,24 +1,26 @@
 # Async And Performance - notes
 
-## Run-to-Completion
+## Chapter 1: Asynchrony: Now & Later
 
-### Atomic
+### Definitions to Understand
+
+#### Atomic
 
 One operation at a time. An operation that appears to be instantaneous from the perspecive of all other threads. You don't need to worry about a partly complete operation when the guarantee applies. It is possible in computing to have one process setting a variable as another is attempting to read the variable, this could cause partial read values. - [notes from stackoverflow](https://stackoverflow.com/questions/15054086/what-does-atomic-mean-in-programming)
 
-### Race Condition
+#### Race Condition
 
 A race condition or 'race hazard' is the behavior of an electronic, software or other system where the output is dependant on the sequence or timing of other uncontrollable events.
 
-### Concurency
+#### Concurency
 
 Concurency is when two or more 'processes' are executing simultaneously over the same period, regardless of whether their individual constituent operations happen in parallel (at the same instant on seperate processors or cores).
 
-### Parallel
+#### Parallel
 
 Means that two or more calculations are happening simultaneously. Large problems can often be divided into smaller ones, which can then be solved at the same time.
 
-### Nondeterminism
+#### Nondeterminism
 
 Nondeterminism in programming is where you can run an application multiple times and recieve different output from the same input. A deterministic program will return the same result with the same input every time.
 
@@ -38,5 +40,12 @@ __The order in which we express statements in our code is not necessarily the sa
 
 ---
 
-## Callbacks
+## Chapter 2: Callbacks
 
+Points on Callbacks
+
+* A function is a 'callback', because it serves as the target for the event loop to 'call back into' the program, whenever that item in the queue is processed.
+* Callbacks are by far the most common way that asynchrony in JS programs is expressed and managed.
+* The call back is the most fundamental async pattern in JavaScript.
+
+### Continuations
