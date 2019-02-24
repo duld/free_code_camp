@@ -78,9 +78,27 @@ When you take part of your program and give over control of its execution to ano
 
 > In IoC, custom-written portions of a computer program recieve the flow of control from a generic framework. A software architecture with this design inverts control as compared to traditional procedural programming: in traditional programming, the custom code that expresses the purpose of the program calls into reusable libraries to take care of generic tasks, but with inversion of control, it is the framework that calls into the custom, or task-specific, code.
 >
-> Inversion of control is used to increase modularity of the programe and make it extensiblie. 
+> Inversion of control is used to increase modularity of the programe and make it extensiblie.
 >
 >(Wikipedia)
 
-### Tale of Five Callbacks
+### Trying to Save Callbacks
 
+#### Success & Failur callback pattern
+
+Some APIs require that you pass a success callback and a failure callback to be exectued in either situation. This can improve error handling when working with callbacks.
+
+* The con is that sometimes the error callback is optional and not enforced.
+* If not enforced, we lose the benefits.
+
+#### Error-First Style / Node Style
+
+The first argument of a single callback is reserved for an error object. If success, this argument will be empty/falsy and the subsequent arguments will be the success data. If an error does Occur then the data will not be passed, only the error object.
+
+The pattern relys on checking that there is no error, before processing the successful branch.
+
+### End of Chapter Review
+
+>Callbacks are the fundamental unit of asynchrony in JS. But they're not enough for the evolving landscape of async programming as JS matures.
+
+We tend to plan out actions in a synchronous order, but solve the problem and any unforseen problems in a context switching fashion.
