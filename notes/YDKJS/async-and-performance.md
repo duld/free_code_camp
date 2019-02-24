@@ -49,3 +49,38 @@ Points on Callbacks
 * The call back is the most fundamental async pattern in JavaScript.
 
 ### Continuations
+
+A callback can be thought as a wrapper/encapsulation of a program's continued execution.
+
+### Sequential Brain
+
+We can't really multitask, we seem to only be able to quickly context switch fast enough to handle multiple tasks at once. Kinda like the JS event Loop. So if our brain is the Event Loop, an Asynchronous call could represent delegation of a job to another individual and having them report back.
+
+### Doing VS. Planning
+
+We tend to plan synchronous tasks but in practice we constantly context switch between multiple small unrelated tasks. Thats a good excuse for procrastination and missing goals I suppose. Not my fault, I'm too async!
+
+### Nested / Chained Callbacks
+
+There is a problem when we introduce multiple callbacks that fire their own callbacks; complexity. Callback hell is commonly refered to when we have nested callbacks and the indentation of the code looks like a sideways pyramid. The Author of YDKJS argues that, that is just a visual indication of the true complexity and not the cause. He demonstrates this by breaking the nested callbacks into their own blocks outside of one another and asks the reader to reason about how the code work.
+
+Instead of going deeper and deeper into the code as before, the reader has to continually scan up and down, over and over from one function to another to get the order of calls in their mind correctly. It can be just as frustrating trying to reason about it.
+
+> But the brittle nature of manually hardcoded callbacks (even with hardcoded error handling) is often far less graceful. Once you end up specifying (aka pre-planning) all the various eventualities/paths, thecode becomes so convoluted that it's hard to ever maintain or update it.
+
+### Trust Issues
+
+When we pass our callback to some asynchronous call we are handing off control. Often the function we pass our callback to is from a library that we didn't write and an author we never met. Outsiders! *HIIIIIIISSSSS!!!*
+
+#### Inversion of Control
+
+When you take part of your program and give over control of its execution to another third party. There's an unspoken 'contract' that exists between your code and theird-party utility -- a set of thigs you expect to be maintained. (YDKJS)
+
+> In IoC, custom-written portions of a computer program recieve the flow of control from a generic framework. A software architecture with this design inverts control as compared to traditional procedural programming: in traditional programming, the custom code that expresses the purpose of the program calls into reusable libraries to take care of generic tasks, but with inversion of control, it is the framework that calls into the custom, or task-specific, code.
+>
+> Inversion of control is used to increase modularity of the programe and make it extensiblie. 
+>
+>(Wikipedia)
+
+### Tale of Five Callbacks
+
