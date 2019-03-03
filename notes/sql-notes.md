@@ -49,6 +49,8 @@ SELECT name, CASE WHEN age > 18 THEN "adult" ELSE "MINOR" END "type" FROM custom
 
 #### Aggregating Data
 
+An aggregate function allows us to perform a calculation on a set of values to return a single scalar value. Common aggregate functions include: AVG(), COUNT(), MIN(), MAX(), SUM().
+
 ```SQL
 -- Aggregate functions
 SELECT MAX(age) FROM customers;
