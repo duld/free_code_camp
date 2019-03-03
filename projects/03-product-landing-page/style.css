@@ -48,8 +48,13 @@ table {
   --primary: #007bff;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+}
+
 body {
   font-size: 1rem;
+  font-family: 'Raleway', sans-serif;
 }
 
 /* NAVIGATION */
@@ -166,7 +171,7 @@ nav {
 
 /* Feature list */
 .feature-list {
-  padding: 120px 0;
+  padding: 100px 0;
 }
 
 .feature-item {
@@ -207,5 +212,28 @@ nav {
   line-height: 1.35;
 }
 
+/* Showcase */
 
+.showcase-item {
+  display: flex;
+  flex-direction: column;
+}
 
+.showcase-image {
+  background: gray;
+  height: 500px;
+}
+
+.showcase-text {
+  padding: 90px;
+  line-height: 1.5;
+}
+
+.showcase-text > h2 {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.showcase-text > p {
+  font-size: 20px;
+}
