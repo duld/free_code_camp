@@ -163,3 +163,49 @@ nav {
   padding-left: 28px;
   padding-right: 28px;
 }
+
+/* Feature list */
+.feature-list {
+  padding: 120px 0;
+}
+
+.feature-item {
+  max-width: 20rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+}
+
+.feature-icon {
+  font-size: 4.5rem;
+  color: var(--primary);
+  line-height: 1.5;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  height: 6.2rem;
+}
+
+.feature-icon:hover {
+  font-size: 4.6rem;
+  margin-bottom: auto;
+}
+
+.feature-item > h2 {
+  font-size: 2rem;
+}
+
+.feature-item > p {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 12px;
+  line-height: 1.35;
+}
+
+
+
