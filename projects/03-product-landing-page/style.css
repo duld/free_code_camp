@@ -1,0 +1,165 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* css resets end */
+
+:root {
+  --primary: #007bff;
+}
+
+body {
+  font-size: 1rem;
+}
+
+/* NAVIGATION */
+nav {
+  font-weight: 400;
+  padding: 8px 16px;
+  background-color: #f8f9fa;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+}
+
+.brand {
+  text-decoration: none;
+  color: black;
+  font-size: 22px;
+  align-self: center;
+}
+
+.button {
+  text-decoration: none;
+  color: white;
+  padding: 6px 8px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.nav-button {
+  background-color: var(--primary);
+  border: 2px solid var(--primary);
+}
+
+.nav-button:active {
+  border: 2px solid #00abff;
+}
+
+/* MASTHEAD */
+.masthead {
+  background-color: gray;
+  height: 600px;
+  /* background: url(); */
+  /* background-size: cover; */
+}
+
+.masthead-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+  height: 100%;
+  color: white;
+  padding: 0 15px 0 15px;
+  box-sizing: border-box;
+}
+
+.masthead-content h1 {
+  font-size: 3.15rem;
+  text-align: center;
+  line-height: 4rem;
+}
+
+.masthead-item {
+  margin: 20px 0;
+  width: 100%;
+}
+
+/* .form-row {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+} */
+
+#masthead-form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.masthead-input {
+  width: 50%;
+  padding: 15px;
+  border-radius: 4px;
+  border: none;
+  font-size: 16px;
+  margin: 0 12px;
+}
+
+.masthead-button {
+  background: var(--primary);
+  height: 3.1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.25rem;
+  padding-left: 28px;
+  padding-right: 28px;
+}
